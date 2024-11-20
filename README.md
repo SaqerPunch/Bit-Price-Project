@@ -1,8 +1,8 @@
-Bitcoin Returns Prediction Using Random Forest Regression
+**Bitcoin Returns Prediction Using Random Forest Regression**
 
 This project analyzes the relationship between Bitcoin returns and two macroeconomic indicators—Gold Price and 10-Year Treasury Yield—using a Random Forest Regression model. The aim is to predict Bitcoin returns based on these features, providing insights into how these economic factors may impact the cryptocurrency market.
 
-Overview
+**Overview**
 In this analysis, I used the following features:
 
 Gold Price: The price of gold, often seen as a safe-haven asset.
@@ -10,7 +10,8 @@ Gold Price: The price of gold, often seen as a safe-haven asset.
 Bitcoin Returns: The percentage change in the Bitcoin price, used as the target variable for prediction.
 I utilized a Random Forest Regression model to predict Bitcoin returns based on historical data of the two features. This project aims to explore how traditional financial indicators like gold and treasury yields correlate with Bitcoin's performance.
 
-Requirements
+**Requirements**
+
 Python 3.x
 pandas: For data manipulation and handling CSV files.
 numpy: For numerical operations.
@@ -40,7 +41,8 @@ Copy code
 └── results/
     ├── predictions.csv         # Predicted Bitcoin returns
     ├── evaluation_metrics.txt  # Model evaluation metrics and results
-Steps Involved
+
+**Steps Involved**
 Data Collection:
 
 Historical Bitcoin prices, Gold prices, and 10-Year Treasury Yield data were gathered. The data was cleaned and processed to ensure consistency.
