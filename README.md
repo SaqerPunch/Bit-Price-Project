@@ -1,4 +1,5 @@
 Bitcoin Returns Prediction Using Random Forest Regression
+
 This project analyzes the relationship between Bitcoin returns and two macroeconomic indicators—Gold Price and 10-Year Treasury Yield—using a Random Forest Regression model. The aim is to predict Bitcoin returns based on these features, providing insights into how these economic factors may impact the cryptocurrency market.
 
 Overview
