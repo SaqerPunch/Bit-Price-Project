@@ -3,6 +3,7 @@
 This project analyzes the relationship between Bitcoin returns and two macroeconomic indicators—Gold Price and 10-Year Treasury Yield—using a Random Forest Regression model. The aim is to predict Bitcoin returns based on these features, providing insights into how these economic factors may impact the cryptocurrency market.
 
 **Overview**
+
 In this analysis, I used the following features:
 
 Gold Price: The price of gold, often seen as a safe-haven asset.
@@ -43,6 +44,7 @@ Copy code
     ├── evaluation_metrics.txt  # Model evaluation metrics and results
 
 **Steps Involved**
+
 Data Collection:
 
 Historical Bitcoin prices, Gold prices, and 10-Year Treasury Yield data were gathered. The data was cleaned and processed to ensure consistency.
