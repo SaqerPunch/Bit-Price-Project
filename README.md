@@ -19,6 +19,8 @@ numpy: For numerical operations.
 scikit-learn: For implementing the Random Forest Regression model.
 matplotlib & seaborn: For data visualization.
 yfinance (optional): To fetch real-time data for gold prices and treasury yields.
+
+
 You can install the necessary libraries with:
 
 bash
@@ -26,22 +28,6 @@ Copy code
 pip install pandas numpy scikit-learn matplotlib seaborn yfinance
 Project Structure
 bash
-Copy code
-/project
-│
-├── data/
-│   ├── bitcoin_data.csv        # Historical Bitcoin returns data
-│   ├── gold_data.csv           # Historical Gold prices data
-│   ├── treasury_yield_data.csv # Historical 10-Year Treasury Yield data
-│
-├── analysis/
-│   ├── preprocess_data.py      # Data preprocessing and cleaning script
-│   ├── feature_engineering.py   # Feature selection and transformation
-│   ├── train_model.py          # Model training and evaluation
-│
-└── results/
-    ├── predictions.csv         # Predicted Bitcoin returns
-    ├── evaluation_metrics.txt  # Model evaluation metrics and results
 
 **Steps Involved**
 
