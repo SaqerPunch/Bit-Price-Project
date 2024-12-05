@@ -7,6 +7,7 @@ import yfinance as yf # type: ignore
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn import metrics
+from sqlalchemy import create_engine
 
 def main():
    
@@ -26,6 +27,25 @@ def main():
     data = pd.concat([btc_close,tenyr_close,gold_close], axis=1)
     data = data.dropna()
     print(data.info())
+
+    # PostgreSQL connection details
+    user = 'Hidden for Privacy Purposes'
+    password = 'Hidden for Privacy Purposes'
+    host = 'localhost'  # or your host
+    port = '5432'       # default port
+    database = 'your_database'
+
+    # Create the connection string
+    connection_string = f'postgresql://{user}:{password}@{host}:{port}/{database}'
+
+    # Create SQLAlchemy engine
+    engine = create_engine(connection_string)
+
+    # Upload data to PostgreSQL
+    table_name = 'financial_data'
+
+    # Uploading data to PostgreSQL
+    data.to_sql(table_name, engine, if_exists='replace', index=True)
 
     #Derviving Correlation and Obtaining Heatmap
     correlation = data.corr()
